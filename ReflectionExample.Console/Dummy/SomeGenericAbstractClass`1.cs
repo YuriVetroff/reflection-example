@@ -7,7 +7,7 @@ namespace ReflectionExample.Console.Dummy
     {
         public virtual void SomeMethod(T input)
         {
-            System.Console.WriteLine($"{GetType()}.{nameof(SomeMethod)}");
+            System.Console.WriteLine($"{GetType().Name}<{input.GetType().Name}>");
         }
     }
 }

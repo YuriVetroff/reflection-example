@@ -2,5 +2,9 @@
 {
     internal abstract class AbstractGenericParam
     {
+        public virtual void AnotherMethod()
+        {
+            System.Console.WriteLine(GetType());
+        }
     }
 }
